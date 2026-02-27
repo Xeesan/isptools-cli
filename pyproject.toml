@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isptools-cli"
+version = "0.3.0"
+authors = [
+  { name="Zia Uddin Zisan", email="ziauddinzisan2001@gmail.com" },
+]
+description = "A command-line utility for ISP Network Engineers"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "requests>=2.28.0"
+]
+
+[project.scripts]
+isptools = "isptools.cli:app"
+
+[project.urls]
+"Homepage" = "https://github.com/Xeesan/isptools"
+"Bug Tracker" = "https://github.com/Xeesan/isptools/issues"
